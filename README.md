@@ -1,2 +1,2 @@
 # curso-backend-node
-Curso de Backend co Node - Platzi
+Curso de Backend con Node - Platzi
