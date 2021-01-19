@@ -16,7 +16,6 @@ server.on("request", (request, response) => {
         body = Buffer.concat(body).toString();
 
         let date = moment(body).format("dddd");
-
         response.end(date);
       });
   } else {
