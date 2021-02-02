@@ -39,7 +39,7 @@ class MongoLib {
   }
   get(collection, id) {
     return this.connect().then((db) => {
-      return db.collection(collection).findOne({ __id: ObjectId(id) });
+      return db.collection(collection).findOne({ _id: ObjectId(id) });
     });
   }
   create(collection, data) {
@@ -61,7 +61,7 @@ class MongoLib {
   delete(collection, id) {
     return this.connect()
       .then((db) => {
-        return db.collection(collection).deleteOne({ __id: ObjectId(id) });
+        return db.collection(collection).deleteOne({ _id: ObjectId(id) });
       })
       .then(() => id);
   }
